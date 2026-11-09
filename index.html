@@ -13,13 +13,24 @@
 </head>
 <body>
 <a class="skip-link" href="#intro">Skip to content</a>
+
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="#intro">Alby Martin</a>
     <span class="portfolio-label">/ PORTFOLIO</span>
-    <nav aria-label="Section navigation">
-      <a href="#intro">Intro</a><a href="#about">About</a><a href="#certifications">Certifications</a>
-      <a href="#projects">Projects</a><a href="#experience">Achievements</a><a href="#connect">Connect</a>
+
+    <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav aria-label="Section navigation" id="site-nav">
+      <a href="#intro">Intro</a>
+      <a href="#about">About</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Achievements</a>
+      <a href="#connect">Connect</a>
     </nav>
     <a class="cv-nav" href="assets/Alby_Martin_CV.pdf" download>Download CV <span>↓</span></a>
   </div>
@@ -28,13 +39,16 @@
 <main id="main-content">
 <section id="intro" class="hero section">
   <div class="hero-grid container">
-    <div class="hero-copy">
+    <div class="hero-copy reveal">
       <div class="eyebrow-dot"><span></span> HELLO, I’M</div>
       <h1>ALBY<br><em>MARTIN</em></h1>
-      <div class="actions"><a class="button" href="#projects">Explore my work <span>↗</span></a><a class="button dark" href="assets/Alby_Martin_CV.pdf" download>↓ &nbsp; Download CV</a></div>
+      <div class="actions">
+        <a class="button" href="#projects">Explore my work <span>↗</span></a>
+        <a class="button dark" href="assets/Alby_Martin_CV.pdf" download>↓ &nbsp; Download CV</a>
+      </div>
       <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
     </div>
-    <div class="portrait-wrap">
+    <div class="portrait-wrap reveal">
       <div class="portrait-frame"><img src="assets/portrait.jpeg" alt="Portrait of Alby Martin"></div>
       <div class="portrait-caption"><span>ALBY MARTIN</span><span>BCA GRADUATE&nbsp; / &nbsp;IT ASPIRANT</span></div>
     </div>
@@ -43,73 +57,190 @@
 
 <section id="about" class="section">
   <div class="container two-col about-grid">
-    <div><div class="eyebrow"><i>01</i><span>ABOUT ME</span></div><h2>A thoughtful approach,<br><em>a hands-on mindset.</em></h2><p>An IT professional and recent BCA graduate with a specialized MDNE diploma. My expertise bridges the gap between application development and network engineering. I believe in creating technology solutions that are not just functional, but scalable and secure. When I'm not configuring networks or exploring new tech stacks, I'm looking for the next complex problem to solve.</p></div>
-    <div class="info-card"><div class="info-block"><small>TECHNICAL TOOLKIT</small><div class="pills"><span>PHP</span><span>JavaScript</span><span>HTML</span><span>MS Office</span><span>C++</span><span>MySQL</span></div></div><div class="info-block"><small>LANGUAGES</small><strong>English · Malayalam · Tamil</strong></div><div class="info-block last"><small>HOBBIES</small><strong>Games · Music · Travel · Movies</strong></div></div>
+    <div class="reveal">
+      <div class="eyebrow"><i>01</i><span>ABOUT ME</span></div>
+      <h2>A thoughtful approach,<br><em>a hands-on mindset.</em></h2>
+      <p>An IT professional and recent BCA graduate with a specialized MDNE diploma. My expertise bridges the gap between application development and network engineering. I believe in creating technology solutions that are not just functional, but scalable and secure. When I'm not configuring networks or exploring new tech stacks, I'm looking for the next complex problem to solve.</p>
+    </div>
+    <div class="info-card reveal">
+      <div class="info-block">
+        <small>TECHNICAL TOOLKIT</small>
+        <div class="pills"><span>PHP</span><span>JavaScript</span><span>HTML</span><span>MS Office</span><span>C++</span><span>MySQL</span></div>
+      </div>
+      <div class="info-block">
+        <small>LANGUAGES</small>
+        <strong>English · Malayalam · Tamil</strong>
+      </div>
+      <div class="info-block last">
+        <small>HOBBIES</small>
+        <strong>Games · Music · Travel · Movies</strong>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="certifications" class="section">
   <div class="container">
-    <div class="section-heading">
+    <div class="section-heading reveal">
       <div>
         <div class="eyebrow"><i>02</i><span>CERTIFICATIONS</span></div>
         <h2>Professional Credentials.</h2>
-        <p>View my technical certifications and diplomas.</p>
+        <p>Verified technical competencies and specialized credentials.</p>
       </div>
     </div>
-    <div class="project-grid">
+    <div class="cert-grid">
       
-      <article class="project-card">
-        <div class="project-top"><i>01</i><span>CERTIFICATE</span></div>
-        <h3 style="margin-bottom: 1rem;">Data Science</h3>
-        <!-- Replace 'your-certificate-1.pdf' with your actual file -->
-        <iframe src="assets/Data Science.pdf" width="100%" height="350px" style="border: 1px solid #e5e5e5; border-radius: 4px;"></iframe>
+      <article class="cert-card reveal">
+        <div class="cert-header">
+          <span class="cert-tag">CERTIFICATE 01</span>
+          <i>01</i>
+        </div>
+        <div class="cert-body">
+          <h3>Data Science</h3>
+          <p>Statistical data processing, exploratory analysis, and visualization pipelines.</p>
+          <div class="pills"><span>Python</span><span>Data Analysis</span></div>
+        </div>
+        <div class="cert-action">
+          <a href="assets/Data Science.pdf" target="_blank" rel="noopener noreferrer" class="link-arrow">
+            View Certificate <span>↗</span>
+          </a>
+        </div>
       </article>
 
-
-      <article class="project-card">
-        <div class="project-top"><i>02</i><span>CERTIFICATE</span></div>
-        <h3 style="margin-bottom: 1rem;">Machine Learning & AI</h3>
-        <!-- Replace 'your-certificate-2.pdf' with your actual file -->
-        <iframe src="assets/Ai&Ml.pdf" width="100%" height="350px" style="border: 1px solid #e5e5e5; border-radius: 4px;"></iframe>
+      <article class="cert-card reveal">
+        <div class="cert-header">
+          <span class="cert-tag">CERTIFICATE 02</span>
+          <i>02</i>
+        </div>
+        <div class="cert-body">
+          <h3>Machine Learning &amp; AI</h3>
+          <p>Core predictive algorithms, model training methodologies, and applied artificial intelligence.</p>
+          <div class="pills"><span>ML Algorithms</span><span>AI Concepts</span></div>
+        </div>
+        <div class="cert-action">
+          <a href="assets/Ai&Ml.pdf" target="_blank" rel="noopener noreferrer" class="link-arrow">
+            View Certificate <span>↗</span>
+          </a>
+        </div>
       </article>
 
-      <article class="project-card">
-        <div class="project-top"><i>03</i><span>CERTIFICATE</span></div>
-        <h3 style="margin-bottom: 1rem;">UI/UX Design</h3>
-        <!-- Replace 'your-certificate-3.pdf' with your actual file -->
-        <iframe src="assets/Ui-Ux.pdf" width="100%" height="350px" style="border: 1px solid #e5e5e5; border-radius: 4px;"></iframe>
+      <article class="cert-card reveal">
+        <div class="cert-header">
+          <span class="cert-tag">CERTIFICATE 03</span>
+          <i>03</i>
+        </div>
+        <div class="cert-body">
+          <h3>UI/UX Design</h3>
+          <p>User research, responsive wireframing, design systems, and interface prototyping.</p>
+          <div class="pills"><span>Figma</span><span>Design Thinking</span></div>
+        </div>
+        <div class="cert-action">
+          <a href="assets/Ui-Ux.pdf" target="_blank" rel="noopener noreferrer" class="link-arrow">
+            View Certificate <span>↗</span>
+          </a>
+        </div>
       </article>
 
     </div>
   </div>
 </section>
 
-<section id="projects" class="section"><div class="container"><div class="section-heading"><div><div class="eyebrow"><i>03</i><span>SELECTED PROJECTS</span></div><h2>Ideas put into practice.</h2><p>Two projects from my BCA journey.</p></div></div><div class="project-grid">
-  <article class="project-card"><div class="project-top"><i>01</i><span>MINI PROJECT</span></div><div><h3>Xplorya</h3><p>Travel Booking Platform</p></div><div class="association"><small>PROJECT ASSOCIATION</small><strong>Progressive Software Solutions And Training</strong><p>Muvattupuzha</p></div></article>
-  <article class="project-card"><div class="project-top"><i>02</i><span>MAIN PROJECT</span></div><div><h3>Provia</h3><p>Architecture Repository and Recruitment System</p></div><div class="association"><small>PROJECT ASSOCIATION</small><strong>Techmindz</strong><p>Kochi</p></div></article>
-</div></div></section>
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <div class="eyebrow"><i>03</i><span>SELECTED PROJECTS</span></div>
+        <h2>Ideas put into practice.</h2>
+        <p>Key software and platform solutions built during my BCA journey.</p>
+      </div>
+    </div>
+    <div class="project-grid">
+      
+      <article class="project-card reveal">
+        <div class="project-top"><i>01</i><span>MINI PROJECT</span></div>
+        <div class="project-preview placeholder-preview">
+          <div class="preview-mockup"><span>Xplorya // Travel Platform</span></div>
+        </div>
+        <div class="project-content">
+          <div class="pills"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+          <h3>Xplorya</h3>
+          <p class="project-subtitle">Travel Booking Platform</p>
+          <p class="project-description">A streamlined web application handling package discovery, reservation tracking, and customer booking requests.</p>
+          <div class="association">
+            <small>PROJECT ASSOCIATION</small>
+            <strong>Progressive Software Solutions And Training</strong>
+            <p>Muvattupuzha</p>
+          </div>
+        </div>
+      </article>
 
-<section id="experience" class="section experience"><div class="container"><div class="section-heading"><div class="eyebrow"><i>04</i><span>ACHIEVEMENTS</span></div><h2>Showing up. Making it happen.</h2></div>
-  <div class="experience-row"><div><h3>Luminance 2K25</h3><small>GAMES COMMITTEE MEMBER</small></div><p>Led game coordination for a management fest.</p></div>
-  <div class="experience-row"><div><h3>BIRTH-2025 Brand Conclave</h3><small>CORE COMMITTEE MEMBER</small></div><p>Supported session, speaker and event-flow coordination.</p></div>
-</div></section>
+      <article class="project-card reveal">
+        <div class="project-top"><i>02</i><span>MAIN PROJECT</span></div>
+        <div class="project-preview placeholder-preview">
+          <div class="preview-mockup"><span>Provia // Architecture System</span></div>
+        </div>
+        <div class="project-content">
+          <div class="pills"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>UI/UX</span></div>
+          <h3>Provia</h3>
+          <p class="project-subtitle">Architecture Repository and Recruitment System</p>
+          <p class="project-description">A centralized design archive and recruitment platform connecting architecture studios with vetted candidates.</p>
+          <div class="association">
+            <small>PROJECT ASSOCIATION</small>
+            <strong>Techmindz</strong>
+            <p>Kochi</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section experience">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <div class="eyebrow"><i>04</i><span>ACHIEVEMENTS</span></div>
+        <h2>Showing up. Making it happen.</h2>
+      </div>
+    </div>
+    <div class="experience-list">
+      
+      <div class="experience-row reveal">
+        <div class="exp-left">
+          <h3>Luminance 2K25</h3>
+          <small>GAMES COMMITTEE MEMBER</small>
+        </div>
+        <p>Led game coordination, stage logistics, and schedule management for an inter-collegiate management fest.</p>
+      </div>
+
+      <div class="experience-row reveal">
+        <div class="exp-left">
+          <h3>BIRTH-2025 Brand Conclave</h3>
+          <small>CORE COMMITTEE MEMBER</small>
+        </div>
+        <p>Supported keynote session flow, technical stage operations, and guest speaker coordination.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section id="connect" class="connect">
   <div class="container two-col connect-grid">
-    <div>
+    <div class="reveal">
       <div class="eyebrow light"><i>05</i><span>CONNECT</span></div>
       <h2>Let’s start a<br><em>conversation.</em></h2>
       <p>Open to entry-level opportunities in IT. Reach out through whichever channel works best for you.</p>
     </div>
-    <div class="contacts">
+    <div class="contacts reveal">
       <a href="mailto:albyjikku5748@gmail.com">
         <span class="contact-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         </span>
         <div><small>EMAIL</small><span>albyjikku5748@gmail.com</span></div><b>↗</b>
       </a>
-      <a href="Mob:+91 9539435748">
+      <a href="tel:+919539435748">
         <span class="contact-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
         </span>
@@ -121,7 +252,6 @@
         </span>
         <div><span>LINKEDIN</span></div><b>↗</b>
       </a>
-      <!-- Make sure to replace 'jkku._' with your actual handles below -->
       <a href="https://www.instagram.com/jkku._?stkn=MXoxZTVmd3B3dGNy" target="_blank" rel="noopener noreferrer">
         <span class="contact-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -138,6 +268,14 @@
   </div>
 </section>
 </main>
-<footer><div class="container footer-inner"><div><a class="footer-brand" href="#intro">Alby Martin</a></div><a href="#intro">BACK TO TOP ↑</a></div></footer>
+
+<footer>
+  <div class="container footer-inner">
+    <div><a class="footer-brand" href="#intro">Alby Martin</a></div>
+    <a href="#intro">BACK TO TOP ↑</a>
+  </div>
+</footer>
+
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
